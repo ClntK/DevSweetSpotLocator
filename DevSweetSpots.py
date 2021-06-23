@@ -9,7 +9,7 @@ to pursue a career in software development. This is done by first accessing
 2 seperate files.
     The first file lists each state by the degree of opportunity I feel each presents 
 to aspiring devs. Data from https://www.zippia.com/software-developer-jobs/best-states/ 
-was used to make this calculation.
+was used to determine this rank.
     The second file lists each state and ranks them by their cost of living. A rating
 is then assigned to each state. This rating is created by adding the states cost-of-living
 rank to its opportunity rank. The state with the lowest rank, being the state with the
