@@ -7,7 +7,7 @@ Purpose:
     This file was created to determine the most lucrative states in which
 to pursue a career in software development. This is done by first accessing 
 2 seperate files.
-    The first file lists each state by the degree of opportunity I feel each presents 
+    The first file ranks each state by the degree of opportunity each presents 
 to aspiring devs. Data from https://www.zippia.com/software-developer-jobs/best-states/ 
 was used to determine this rank.
     The second file lists each state and ranks them by their cost of living. A rating
