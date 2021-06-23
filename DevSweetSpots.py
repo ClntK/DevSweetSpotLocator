@@ -4,18 +4,18 @@ Author: Clint Kline
 Date Created: 06-23-2021
 Last Modified: ""
 Purpose:    
-    This file was created to determine the most lucrative states in which
-to pursue a career in software development. This is done by first accessing 
-2 seperate files.
-    The first file ranks each state by the degree of opportunity each presents 
+    - This file was created to determine the most lucrative states in which to pursue 
+a career in software development. This is done by first accessing 2 seperate files.
+    - The first file ranks each state by the degree of opportunity each presents 
 to aspiring devs. Data from https://www.zippia.com/software-developer-jobs/best-states/ 
 was used to determine this rank.
-    The second file lists each state and ranks them by their cost of living. A rating
-is then assigned to each state. This rating is created by adding the states cost-of-living
-rank to its opportunity rank. The state with the lowest rank, being the state with the
-most profit potential for devs. 
-    This new rating is then written to a new .xlsx file, which is then placed in the current 
-working directory where it can be viewed in MS Excel and sorted as desired. 
+    - The second file lists each state and ranks them by their cost-of-living. Data from 
+https://meric.mo.gov/data/cost-living-data-series was used to determine this rank.
+    - A rating is then assigned to each state. This rating is created by adding the 
+states cost-of-living rank to its opportunity rank. The state with the lowest rating being 
+the state with the most profit potential for devs. This new rating is then written to a new 
+.xlsx file, which is then placed in the current working directory where it can be viewed 
+in MS Excel and sorted as desired. 
 """
 
 
@@ -46,11 +46,12 @@ stateNum = 1  # counter
 
 # for cell in sbo column 1
 #   if counter is less than total number of states
-#       ID cell contents
+#       Identify cell contents
 #       if state in sbo column 1 is also present in sbc column 1
 #           add value of sbo col 2 to sbc col 2, assign to new variable 'rating'
+#           append state name to new list
 #           append 'rating' to new list
-# write new list to new excel file
+# write new lists to new excel file
 
 for cell in sboC1:
     if stateNum <= 51:
