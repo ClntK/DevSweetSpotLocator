@@ -1,21 +1,34 @@
 """
-File: DevSweetSpots.py
+File: DevSweetSpots2.py
 Author: Clint Kline
 Date Created: 06-23-2021
 Last Modified: 06-24-2021
-Purpose:    
+Purpose:
     - This file was created to determine the most lucrative states in which to pursue 
 a career in software development. This is done by first accessing 2 seperate files.
+
     - The first file ranks each state by the degree of opportunity each presents 
 to aspiring devs. Data from https://www.zippia.com/software-developer-jobs/best-states/ 
 was used to determine this rank.
+
     - The second file lists each state and ranks them by their cost-of-living. Data from 
 https://meric.mo.gov/data/cost-living-data-series was used to determine this rank.
+
     - A rating is then assigned to each state. This rating is created by adding the 
 states cost-of-living rank to its opportunity rank. The state with the lowest rating being 
 the state with the most profit potential for devs. This new rating is then written to a new 
 .xlsx file, which is then placed in the current working directory where it can be viewed 
 in MS Excel and sorted as desired. 
+
+UPDATES:
+
+- 06-24-2021
+- New in version 2.
+    - I've added columns to represent each states overall score, as well as each states opportunity
+    and cost-of-living scores from the accompanying .xlsx files. 
+    I've aldo added code to save a finalized version of the file in which all table data is 
+    sorted using the 'Rating' column as the sort key. 
+
 """
 
 
