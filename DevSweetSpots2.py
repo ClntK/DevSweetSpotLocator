@@ -24,9 +24,9 @@ UPDATES:
 
 - 06-24-2021
 - New in version 2.
-    - I've added columns to represent each states overall score, as well as each states opportunity
+    - added columns to represent each states overall score, as well as each states opportunity
     and cost-of-living scores from the accompanying .xlsx files. 
-    I've aldo added code to save a finalized version of the file in which all table data is 
+    - added code to save a finalized version of the file in which all table data is 
     sorted using the 'Rating' column as the sort key. 
 
 """
