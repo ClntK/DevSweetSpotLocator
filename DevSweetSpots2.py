@@ -149,16 +149,16 @@ try:
     pyxl.writexl(
         db=newDb, fn=folder + "\\DevSweetSpotsResults.xlsx")
 
-    ################################
-    # SORT OUTPUT
-    ################################
+    ##################################
+    # SORT OUTPUT (w/win32com.client)
+    ##################################
     # sort table data by rating
     # assign Excel app to variable
     excel = win32com.client.Dispatch("Excel.Application")
     # designate file and workbook on which to perform sort function
     file = excel.Workbooks.Open(folder + "\\DevSweetSpotsResults.xlsx")
     table = file.Worksheets('Sheet1')
-    # designate cell to sort. B2=start sort @ column be row 2. BE52=sort columns B-E, stop at row 52. C2=sort key
+    # designate cell to sort. B2=start sort @ column B, row 2. BE52=sort columns B-E, stop @ row 52. C2=sort key
     table.Range('B2:BE52').Sort(Key1=table.Range(
         'C2'), Order1=1, Orientation=1)
     # finish up by saving and closing file
@@ -166,5 +166,6 @@ try:
     excel.Application.Quit()
 
     print("\nNew spreadsheet successfully created!\n")
+    
 except Exception as e:
     print("\nFile write has Failed.\n", "Reason: ", e)
