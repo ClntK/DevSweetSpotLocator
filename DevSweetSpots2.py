@@ -28,6 +28,7 @@ UPDATES:
     and cost-of-living scores from the accompanying .xlsx files. 
     - added code to save a finalized version of the file in which all table data is 
     sorted using the 'Rating' column as the sort key. 
+    - modified try-except statement to display exception as well as failure message.
 
 """
 
